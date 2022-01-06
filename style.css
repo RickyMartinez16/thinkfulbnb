@@ -94,9 +94,7 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  
   border: 2px solid #ff385c;
   padding: 10px;
 }
@@ -113,7 +111,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 65%;
+  width: 180px;
 }
 
 form button {
@@ -143,7 +141,13 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 14 px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px
   }
 
   header h1 {
@@ -155,12 +159,25 @@ footer p {
     margin-top: 8px;
   }
 
+  header nav ul {
+    align-items: center;
+  }
+
   header nav ul li a:hover {
     color: #bdbdbd
   }
 
   form {
     flex-direction: row;
+  }
+
+  form button {
+    flex: 1;
+  }
+
+  form select,
+  form input {
+    margin-bottom: 0px;
   }
 
   .group {
